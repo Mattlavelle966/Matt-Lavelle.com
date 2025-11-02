@@ -1,0 +1,325 @@
+@font-face {
+    src: url( ./fonts/AlbertSans-Light.ttf);
+    font-family: albert-sans;
+}
+@font-face {
+    font-family: albert-sans-thin;
+    src: url(./fonts/AlbertSans-Thin.ttf);
+}
+.transition-fade{
+    opacity: 1;
+    transition: 500ms;
+}
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+:root{
+    --moving-bg-img: -150px;
+}
+body{
+    margin: 0;
+    --nav-load-time:300ms;
+    --nav-link-load-time: 500ms;
+    --article-load-delay: calc(var(--nav-link-load-time) + var(--nav-load-time));
+    font-family:albert-sans;
+}
+.background-img{
+    width: 100%;
+    height: 100%;
+    background-image:url(pics/pexels-joyston-judah-933054.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: 0px var(--moving-bg-img);
+    transition: 2s ease-out;
+}
+.name-head{
+    margin-top:-21px;
+    margin-bottom: 400px;
+    width: 100%;
+    height: 90px;
+    color: rgb(0, 0, 0);
+    background-color: #dfdfdf;
+    text-align: center;
+    letter-spacing: 2px;
+}
+nav{
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+nav a:hover{
+    text-shadow: 1px 1px 1px #092442;
+}
+article{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main{
+    padding: 30px;
+    padding-bottom: 150px;
+    background-color: #dfdfdf;
+    height: 500px;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    margin-bottom: 5px;
+    background-color: #dfdfdf;
+}
+h2{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+h3{
+    
+    margin-top: -5px;
+    background-color: #dfdfdf;
+}
+h4{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    font-size:25px;
+    margin: 0px;
+    
+
+}
+h5{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+
+}
+h6{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    font-size: 20px;
+    margin-top: -10px;
+
+}
+p{
+    animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+article img{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+/* experiance.htm/projects.htm article code starts here */
+.under-h2{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    font-size: medium;
+}
+.text-box ul{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    display: flex;
+    flex-direction: row;   
+}
+.ul-item-1{
+    width:100px;
+    height:150px;
+}
+.ul-item-2{
+    width:300px;
+    height:150px;
+}
+.ul-item-text{
+    width:600px;
+    height:150px;
+}
+/* experiance.htm/projects.htm article code ends here */
+
+/* skills.htm article code starts here */
+table{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    border-spacing:20px;
+    
+}
+table th{
+    border: solid black 1px;
+    padding: 20px;
+
+}
+table td{
+    border: solid black 1px;
+    padding: 20px;
+}
+/* experiance.htm/projects.htm article code ends here */
+
+/*contact.htm styles below*/
+.container{
+    width: 90em;
+    height: 50em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact-names{
+    margin-left: 10em;
+}
+.form-container{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+form input{
+    font-family:albert-sans;
+    font-size: 15px;
+    background-color: #dfdfdf;
+    border: solid 1px #092442;
+    color: #000000;
+    height:20px;
+    width: 90%;
+    margin: 10px;
+}
+form textarea{
+    background-color: #dfdfdf;
+    border: solid 1px #092442;
+    color: #000000;
+    font-family:albert-sans;
+    font-size: 15px;
+    width: 90%;
+    margin: 10px;
+    height:50px;
+}
+form button{
+    font-family:albert-sans;
+    background-color: #000000;
+    color: #dfdfdf;
+    border: solid 1px #092442;
+    margin: 0 auto;
+    height: 3em;
+    width: 20em;
+}
+/*end of contact css*/
+
+.bottom{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dfdfdf;
+    width: 100%;
+    height: 300px;
+    font-family: albert-sans-thin;
+    padding-top: 5em;
+}
+.social-media{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+address{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes nav-link-load {
+    0%{
+        transform: scale(0);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes nav-first-link-load {
+    0%{
+        transform: transformX(-1000%);
+    }
+    90%{
+        transform: transformX(50%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes nav-last-link-load {
+    0%{
+        transform: transformX(1000%);
+    }
+    90%{
+        transform: transformX(-50%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes article-load{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

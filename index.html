@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Lavelle</title>
+    <link rel="stylesheet" href="JL.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="window-scroll-const.js"></script>   
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <style class="style">
+        p{margin-top: 30px;width: 55em;margin: 0 auto;}
+        h3{
+        animation: article-load 300ms ease-in var(--article-load-delay);
+        animation-fill-mode: forwards;
+        transform: translateY(-20px);
+        opacity: 0;}
+        h1{
+        animation: article-load 300ms ease-in var(--article-load-delay);
+        animation-fill-mode: forwards;
+        transform: translateY(-20px);
+        opacity: 0;
+        }
+        nav li:first-child {
+        animation-name:nav-first-link-load;
+        transform: translateX(-1000%);
+        }
+        nav li:last-child {
+        animation-name:nav-first-link-load;
+        transform: translateX(1000%);
+        }
+        nav li{
+        animation-name: nav-link-load;
+        animation-duration: var(--nav-link-load-time);
+        animation-timing-function: ease-in;
+        animation-delay: var(--nav-load-time);
+        animation-fill-mode: forwards;
+        transform: scale(0);
+        }
+        nav{
+        animation: nav-load var(--nav-load-time) ease-in;
+        }
+    </style>
+    <!--style tag is mostly for all opening animations that are sole to the opening of the index page-->
+</head>
+<body><!--dynamic background image-->
+    <div class="background-img">
+        <!--front page title-->
+        <div class="name-head">
+            <h1 style="padding-top:10px;"><b>JOSEPH LAVELLE</b></h1>
+            <h3>Data Engineer</h3>
+        </div>
+        <!-- begining of nav bar-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html"><b>Home</b></a></li>
+                    <li><a href="/experience.htm"><b>Experience</b></a></li>
+                    <li><a href="/projects.htm"><b>Projects</b></a></li>
+                    <li><a href="/skills.htm"><b>Skills</b></a></li>
+                    <li><a href="/contact.htm"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end of nav bar-->
+        <!--main article/content-->
+        <main>
+            <main id="swup" class="transition-fade">
+                <section>
+                    <article>
+                        <style>article img{border-radius: 50%;}</style>
+                        <img src="pics/headshot.png" style="border-radius: 50%;">
+                        <h2>GET TO KNOW ME</h2>
+                        <p style="margin-top: 30px;">Hi! Thanks for checking out my website! I’m Joe, a recent  mechanical engineering 
+                            graduate whose now pursuing a dual degree in computer science. In the past couple 
+                            years, I’ve spent time working on a ton of interesting projects in both the data and 
+                            mechatronics spaces! Programming has always been a big interest of mine, and with my 
+                            internship as a data analyst at Cenovus, I was finally able to apply it in a professional 
+                            setting. I learned a lot in my term there and would love to further pursue data science 
+                            down the road in both work and graduate school. Other ongoing projects of mine include 
+                            developing an educational robot for elementary school student 
+                            and working as the business manager at the Tea Room - a zero-waste café.</p>
+                        <p style="margin-top: 30px;">In my personal time, I have many hobbies! I love snowboarding, rock climbing, 
+                            hiking and all things outdoors. While I was living in western Canada last year,
+                            you could find me in the mountains just about every weekend rain or shine! While
+                            I’m at home I’m an avid baker and cook. I love making all kinds of baked goods,
+                            from croissants, to scones, to macarons, I love a challenge and the satisfaction
+                                that comes from finally getting a difficult recipe to turn out! If you’re
+                                interested in learning more about me, I’ve compiled some information on my 
+                                professional experience and projects down below!</p>
+                    </article>
+                </section>
+            </main>
+        </main>
+        <!--footer-->
+        <div class="bottom">
+            <h4>JOSEPH LAVELLE</h4>
+            <h5>Joseph.lavelle@queensu.ca</h5>
+            <h6>+1 (613) 876-4015</h6>
+            <div class="social-media">
+                <a href="https://github.com/Josephlavelle"><img src="pics/github.png" style="width:30px;height:30px;"></a>
+                <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEmh-oHJPR4OAAAAYSa6Yi4ecl7n6ul6S7UEy5Og57-6PMbs_XNJpvzIQo1TFY3FXVegbH2C_rX30Y8t3oaDbvagTY7luFJoMGxEt5m_HM9DUbwQucC4pKAIsxCG8eRlIftACU=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoseph--lavelle"><img src="pics/linkedin.png" style="width:30px;height:30px;"></a>
+            </div>
+            <address>©2022 by Joseph Lavelle</address>
+            <address>This website is still under development and was last updated on 2022-12-05.</address>
+        </div>
+<script src="scroll-func.js" defer></script>
+<script src="first-open.js" ></script>
+</body>
+</html>

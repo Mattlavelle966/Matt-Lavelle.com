@@ -1,0 +1,6 @@
+notes below
+
+
+1- animation only on first load 
+2- github fonts
+3- last updated/under development
