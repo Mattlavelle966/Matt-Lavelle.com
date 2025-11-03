@@ -26,7 +26,7 @@ body{
 .background-img{
     width: 100%;
     height: 100%;
-    background-image:url(pics/pexels-joyston-judah-933054.jpg);
+    background-image:url(pics/image\ \(1\).jpg);
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -75,10 +75,11 @@ main{
     padding: 30px;
     padding-bottom: 150px;
     background-color: #dfdfdf;
-    height: 500px;
+    height: auto;
     max-width: none;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
 }
 h1{
     margin-bottom: 5px;
