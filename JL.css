@@ -73,7 +73,7 @@ article{
 }
 main{
     padding: 30px;
-    padding-bottom: 150px;
+    --padding-bottom: 150px;
     background-color: #dfdfdf;
     height: auto;
     max-width: none;
@@ -185,6 +185,9 @@ table td{
     border: solid black 1px;
     padding: 20px;
 }
+
+
+
 /* experiance.htm/projects.htm article code ends here */
 
 /*contact.htm styles below*/
@@ -324,3 +327,4 @@ address{
         opacity: 1;
     }
 }
+
