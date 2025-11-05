@@ -16,6 +16,7 @@ html.is-animating .transition-fade {
 :root{
     --moving-bg-img: -150px;
 }
+
 body{
     margin: 0;
     --nav-load-time:300ms;
@@ -137,7 +138,15 @@ article img{
     height: 100px;
     margin: 0 auto;
 }
+
+
 /* experiance.htm/projects.htm article code starts here */
+.parent-Cont{
+  display: flex;
+  flex-direction:row;
+  padding-top: 5%;
+}
+
 .under-h2{
     animation: article-load 300ms ease-in var(--article-load-delay);
     animation-fill-mode: forwards;
