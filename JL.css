@@ -96,6 +96,16 @@ h3{
     
     margin-top: -5px;
     background-color: #dfdfdf;
+
+}
+.date-sub{
+    animation: article-load 300ms ease-in var(--article-load-delay);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+    font-size:14px;
+    margin: 0px;
+    font-weight: bold;
 }
 h4{
     animation: article-load 300ms ease-in var(--article-load-delay);
@@ -335,5 +345,168 @@ address{
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+  /* =========================================
+   Responsive Media Queries (Revised & Fixed)
+   ========================================= */
+
+/* Tablet breakpoint (<= 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    padding: 0.5em;
+  }
+
+  /* Experience & Projects layout fixes */
+  .parent-Cont,
+  .text-box ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .ul-item-1,
+  .ul-item-2,
+  .ul-item-text {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  /* Contact page container and form */
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+  }
+
+  .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact-names {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* Skills table */
+  table {
+    width: 95%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* Embedded AI site */
+  embed, iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+    display: block;
+  }
+}
+
+/* Mobile breakpoint (<= 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  /* Header & navigation */
+  .name-head {
+    font-size: 18px;
+    height: auto;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 4px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  /* Fix project/experience cards */
+  .parent-Cont,
+  .text-box ul {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0;
+    gap: 0.5rem;
+  }
+
+  .ul-item-1,
+  .ul-item-2,
+  .ul-item-text {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.8em;
+    text-align: center;
+  }
+
+  /* Contact form */
+  .form-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  form button {
+    width: 100%;
+    height: 2.8em;
+    font-size: 0.95rem;
+  }
+
+  /* Embedded site (contact page) */
+  embed,
+  iframe {
+    width: 100%;
+    height: 320px;
+    border: none;
+  }
+
+  /* Typography scale-down */
+  h1 { font-size: 1.7em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.2em; }
+  h4, h5, h6 { font-size: 1.1em; }
+  p { font-size: 0.95em; line-height: 1.4; }
+
+  /* Footer cleanup */
+  .bottom {
+    height: auto;
+    padding: 1.5em 0;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 13px;
+  }
 }
 
